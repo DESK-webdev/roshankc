@@ -1,0 +1,4 @@
+sn shops manager country city street phone number items available
+1 lamachaur khaja ghar. raj kumar shrestha nepal pokhara lamachaur 9814148108 2,4,3,7,9
+2 on shai. ajaya jaishi nepal pokhara lamachour 9814148108 1,2,4,6,5,8
+3 anzan food. anzan poudel nepal pokhara lamachaur 0001981414 1,2,4,6,5,8

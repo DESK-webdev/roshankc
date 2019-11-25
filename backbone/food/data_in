@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="css/data_view.css" type="text/css">
+<body>
+    
+    <div class="main">
+           <ul class="big">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Log in</a></li>
+           </ul>
+           <ul class="small">
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-phone-square"></i></a></li>
+                <li><a href="#"><i class="far fa-address-book"></i></a></li>
+                <li><a href="#"><i class="fas fa-images"></i></a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i></a></li>
+                <li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li>
+           </ul>
+    <div class="container">
+        <h1>Our Food Services</h1>
+        <div class="forms">
+                <form action="data_store.php" method="GET" class="form_inside need-validation">   
+                        <div class="form-group">
+                            <label for="name" class="name">Names;</label>
+                            <input type="text" class="form-control name_input" id="name" name="c_name" placeholder="Company Name" required>
+                            <input type="text" class="form-control name_input" id="name" name="m_name" placeholder="Manager Name" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="loc" class="name">Location;</label>
+                            <input type="text" class="form-control location_input" id="loc" name="country" placeholder="Country" required>
+                            <input type="text" class="form-control location_input" id="loc" name="city" placeholder="City" required>
+                            <input type="text" class="form-control location_input" id="loc" name="street" placeholder="Street" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <label for="number" class="num">Number:</label>
+                            <input class="form-control" type="number" id="number" name="nummber" placeholder="Ph/Mo Number" required>
+                            <div class="invalid-feedack"></div>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="comment"><strong class="review">Reviews:</strong></label>
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Type Reviews"></textarea>
+                        </div>
+                        <div>
+                            <a class="btn btn-success btn-lg mb-3 ap" role="button"> +Add Foods Here</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Info</button>
+                    </form>
+
+                    <div>
+                        <a href="data_view.php" role="button" class="btn btn-outline-secondary mt-3 mb-2">Go to Tables</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

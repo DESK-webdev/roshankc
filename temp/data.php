@@ -10,8 +10,9 @@
     //}
 
   //{ test of external resourse streaming
-    echo "<a href=\"data_view.php\">stored data</a>";
-    $file=fopen("form.html","r");  ////home/roshan/git/AnjanPoudel/ap4/index.html
+    // $x=include "item_replace.php";
+    // print_r($x);
+    $file=fopen("data_in","r");  ////home/roshan/git/AnjanPoudel/ap4/index.html
 	  while($gets=fgets($file)){
 	    echo $gets;
   }

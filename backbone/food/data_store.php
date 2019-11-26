@@ -9,6 +9,7 @@ error_reporting(0);
     ('0', '".get['c_name'].".', '".get['m_name']."', '".get['country']."', '".get['city']."', '".get['street']."', '".get['number']."', '".get['food']."') ");
     //$result=mysqli_fetch_assoc($qry);
     if(!$qry){echo mysqli_error($conn);echo "no";}
-    echo "done";
+    else echo "done";
     mysqli_close($conn);
+    //header("Location: index.php");
 ?> 

@@ -1,12 +1,10 @@
 <?php
+include "include.php";
+    show("ht_element/header");
+    show("ht_element/data_view_top");
     $conn=mysqli_connect("127.0.0.1","root","","test","3306");
     if(!$conn){echo mysqli_connect_error();}
     $i=0;
-    $file=fopen("table_header","r");
-    while($buff=fgets($file)){
-        echo $buff;
-    }
-    fclose($file);
     $result=Array( 
         'sn' => 'sn',
         'name_company' => "<b>shops</b>",
@@ -34,10 +32,7 @@
         $qry=mysqli_query($conn,"select * from data where sn='".$i."';"); 
         $result=mysqli_fetch_assoc($qry);
       }
-    $file=fopen("table_footer","r");
-    while($buff=fgets($file)){
-        echo $buff;
-    }
-    fclose($file);
     mysqli_close($conn);
+    show("ht_element/data_view_bottom");
+    show("ht_element/footer");
 ?>

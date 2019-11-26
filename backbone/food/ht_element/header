@@ -10,8 +10,7 @@
     <title>Document</title>
 </head>
     <link rel="stylesheet" href="css/data_view.css" type="text/css">
-<body>
-    
+<body>    
     <div class="main">
            <ul class="big">
                 <li><a href="#">Home</a></li>

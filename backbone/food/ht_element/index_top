@@ -1,6 +1,6 @@
  <div class="container">
         <h1>Our Food Services</h1>
-        <div class="forms">
+            <div class="forms">
                 <form action="data_store.php" method="GET" class="form_inside need-validation">   
                         <div class="form-group">
                             <label for="name" class="name">Names;</label>
@@ -17,7 +17,7 @@
                         </div>
                         <div class="form-group form-inline">
                             <label for="number" class="num">Number:</label>
-                            <input class="form-control" type="number" id="number" name="nummber" placeholder="Ph/Mo Number" required>
+                            <input class="form-control" type="number" id="number" name="phone" placeholder="Ph/Mo Number" required>
                             <div class="invalid-feedack"></div>
                         </div>
                         <div class="form-group"> 

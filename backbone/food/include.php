@@ -1,6 +1,6 @@
 <?php
     function show($url){
-        $file=fopen($url,"r");  ////home/roshan/git/AnjanPoudel/ap4/index.html
+        $file=fopen($url,"r");  
         while($gets=fgets($file)){
             echo $gets;
         }

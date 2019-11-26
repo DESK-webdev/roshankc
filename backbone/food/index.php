@@ -9,7 +9,7 @@
         echo "
                 <div class=\"form-check\">
                 <label for=\"check1\" class=\"form-check-label\">
-                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"food\" value=\"$i\">
+                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"food[$i]\" value=\"$i\">
                     $item
                 </label>
                 </div>

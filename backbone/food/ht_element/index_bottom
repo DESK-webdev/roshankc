@@ -1,0 +1,17 @@
+                               <div class="form-group"> 
+                                <label for="comment"><strong class="review">Other Foods:</strong></label>
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Type Reviews"></textarea>
+                            </div>
+                            <a href="#done" class="btn btn-outline-success btn-sm">Done!</a>
+                           <!-- <div id="done">
+                                <h4><bold>Food added Successfully</bold></h4>
+                            </div> -->
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Info</button>
+                    </form>
+                    <div>
+                        <a href="data_view.php" role="button" class="btn btn-outline-secondary mt-3 mb-2">Go to Tables</a>
+                    </div>
+            </div>
+        </div>
+    </div>

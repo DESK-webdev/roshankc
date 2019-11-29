@@ -7,10 +7,10 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Table</title>
+    <title>Document</title>
 </head>
     <link rel="stylesheet" href="css/data_view.css" type="text/css">
-<body>
+<body>    
     <div class="main">
            <ul class="big">
                 <li><a href="#">Home</a></li>
@@ -28,5 +28,3 @@
                 <li><a href="#"><i class="fas fa-briefcase"></i></a></li>
                 <li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li>
            </ul>
-    <div class="tables table-responsive">       
-    <table class="table table-bordered table-hover table-light">

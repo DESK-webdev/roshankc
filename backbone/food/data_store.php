@@ -18,5 +18,5 @@ error_reporting(0);
     if(!$qry){echo mysqli_error($conn);echo "no";}
     else echo "done";
     mysqli_close($conn);
-    header("Location: index.php");
+    //header("Location: index.php");
 ?> 

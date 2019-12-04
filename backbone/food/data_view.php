@@ -16,7 +16,6 @@ include "include.php";
         'foods' => '<b>items available</b>'
         );
     while($result){
-        //if(!$qry){echo mysqli_error($conn);echo "no";}
         echo (   
                  "<tr>".
                  "<td>".$result['sn']."</td>".

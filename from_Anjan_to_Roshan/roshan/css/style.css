@@ -3,30 +3,28 @@
 *{
     margin: 0;
     padding: 0;
-
 }
-
 body{
-    background:gray  ;
-    
-    
+    background:gray ; 
 }
 .container-fluid{
     width: 100%;
 }
-.road{
-    height: 196px;
-    
+.upper-road{
+    margin-top:20px;
 }
-
-
-
-
-.col-2{
+.road{
+    height: 196px;   
+}
+.green{
     background: green;
     border: 4px double black;
-    height: 198px;
-    
+    height: 198px;   
+}
+.red{
+    background: red;
+    border: 4px double black;
+    height: 198px;   
 }
 .small-block{
     height: 15px ;
@@ -35,10 +33,8 @@ body{
     margin:92px 0px 0 50px ;
 }
 .row{
-    width: 100%;
-    
+    width: 100%;   
 }
-.col-2:focus{
+#parked{
     background: red;
-
 }

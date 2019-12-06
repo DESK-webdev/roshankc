@@ -2,7 +2,7 @@
 include "include.php";
     show("ht_element/header");
     show("ht_element/data_view_top");
-    $conn=mysqli_connect("127.0.0.1","root","","test","3306");
+    $conn=/*provided individually*/;
     if(!$conn){echo mysqli_connect_error();}
     $i=0;
     $result=Array( 
@@ -12,8 +12,8 @@ include "include.php";
         'location_country' => '<b>country</b>',
         'location_city' => '<b>city</b>',
         'location_street' => '<b>street</b>',
-        'number' => '<b>phone number</b>',
-        'foods' => '<b>items available</b>'
+        'numbers' => '<b>phone number</b>',
+        'food' => '<b>items available</b>'
         );
     while($result){
         echo (   
@@ -24,8 +24,8 @@ include "include.php";
                  "<td>".$result['location_country']."</td>".
                  "<td>".$result['location_city']."</td>".
                  "<td>".$result['location_street']."</td>".
-                 "<td>".$result['number']."</td>".
-                 "<td>".$result['foods']."</td></tr>"
+                 "<td>".$result['numbers']."</td>".
+                 "<td>".$result['food']."</td></tr>"
             );
         $i++;
         $qry=mysqli_query($conn,"select * from data where sn='".$i."';"); 

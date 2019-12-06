@@ -3,7 +3,7 @@
     $a=0;
     exec("./serial",$p,$a);
     echo $a;
-    print_r($p);
+    //print_r($p);
     show("header");
     $i=0;
     $status = array('0' =>"green",'1' => "red" );

@@ -1,11 +1,15 @@
-                               <div class="form-group"> 
+                            <div class="form-group"> 
+                            <label for="comment"><strong class="review">Reviews:</strong></label>
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Type Reviews"></textarea>
+                        </div>
+                        <a class="btn btn-success btn-lg mb-3" role="button" href="#add_food">+Add Foods Here</a>
+                        <div id="add_food">
+                            <h3><strong>Check foods boxes:</strong></h3>
+                                <div class="form-group"> 
                                 <label for="comment"><strong class="review">Other Foods:</strong></label>
                                 <textarea class="form-control" rows="5" id="comment" placeholder="Type Reviews"></textarea>
-                            </div>
+                                </div>
                             <a href="#done" class="btn btn-outline-success btn-sm">Done!</a>
-                           <!-- <div id="done">
-                                <h4><bold>Food added Successfully</bold></h4>
-                            </div> -->
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Info</button>
                     </form>
@@ -13,5 +17,4 @@
                         <a href="data_view.php" role="button" class="btn btn-outline-secondary mt-3 mb-2">Go to Tables</a>
                     </div>
             </div>
-        </div>
-    </div>
+    </div> 

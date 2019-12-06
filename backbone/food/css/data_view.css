@@ -3,6 +3,70 @@
     padding: 0;
     transition: 0.1s;
 }
+.bg-steel{
+    background: rgb(255, 211, 15);
+    height: 5vw;
+} 
+.nav-item{
+    padding: 14px;
+    font-weight: bold;
+    font-size: 17px;
+    font-style: oblique;
+}
+.search{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top:-50% ;
+    transform: translate(-50%,-50%);
+    padding-top: 20px;
+    transition: 0.5s;  
+}
+.search:hover {
+    width:80% ;
+    transition: 0.5s;
+}
+.search-box { 
+  position: absolute;
+  background: #960707;
+  width:95%;
+  border-radius: 30px;
+  height:60px;  
+}
+.search-btn {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    left: 100%;
+    background:#7e1b1b;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer; 
+    transition: 0.5s;
+}
+search-btn:hover{
+    color: #e9b3b3;
+    background: #fffbfb;  
+}
+.search-btn > i {
+    font-size: 30px;  
+}
+.search-text {
+    border: none;
+    background:none;
+    outline: none;
+    line-height: 60px;
+    width: 98%;
+    color: #ece6e6;
+    padding-left:20px ;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    transition: 0.5s;
+}
 .main{
     background-image: url(../img/back.jpg);
     background-size: cover;
@@ -16,9 +80,7 @@ ul{
 }
 ul li{
     display: inline;
-    padding: 25px;
-    
-    
+    padding: 25px;  
 }
 ul li a{
     color: white;
@@ -56,7 +118,6 @@ ul li a{
 .review{
     color: tomato;
 }
-
 .name{
     color: teal;
     padding: 0 90% 0 0;
@@ -69,11 +130,9 @@ ul li a{
 }
 .name_input{
     display: inline;
-    width: 48%;
 }
 .location_input{
     display: inline;
-    width: 30%;
 }
 .form-check{
     font-size: medium;
@@ -95,6 +154,19 @@ ul li a{
 .table{
     width: 100%;
     padding: 2;
+}
+hr.light{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .4rem;
+    margin-bottom: .7rem;
+}
+.pd5{  
+    padding-right: 12px; 
+}
+footer{
+    background-color: rgb(58, 57, 57);
+    color: rgb(223, 221, 221);  
 }
 @media only screen and (max-width:768px){
    

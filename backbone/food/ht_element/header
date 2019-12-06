@@ -11,20 +11,35 @@
 </head>
     <link rel="stylesheet" href="css/data_view.css" type="text/css">
 <body>    
-    <div class="main">
-           <ul class="big">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Log in</a></li>
-           </ul>
-           <ul class="small">
-                <li><a href="#"><i class="fas fa-home"></i></a></li>
-                <li><a href="#"><i class="fas fa-phone-square"></i></a></li>
-                <li><a href="#"><i class="far fa-address-book"></i></a></li>
-                <li><a href="#"><i class="fas fa-images"></i></a></li>
-                <li><a href="#"><i class="fas fa-briefcase"></i></a></li>
-                <li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li>
-           </ul>
+<nav class="navbar navbar-expand-sm bg-steel navbar-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo1.png" alt="logo"></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponse" type="button">
+                <span class="navbar-toggler-icon">
+            </span></button>
+            
+        <div class="collapse navbar-collapse" id="navbarResponse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Foods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log in</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>

@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-    $select=implode(",",$_GET['food']);
+    $selected=implode(",",$_GET['food']);
     define(get,$_GET);
     $conn=/*provided individually*/;
     if(!$conn){echo mysqli_connect_error();}
@@ -13,7 +13,7 @@ error_reporting(0);
             '".get['city']."',
             '".get['street']."',
             '".get['phone']."',
-            '".$select."')
+            '".$selected."')
          ");
     if(!$qry){echo mysqli_error($conn);echo "no";}
     else echo "done";

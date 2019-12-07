@@ -1,5 +1,6 @@
 <?php
-    $conn=/*provided individually*/;
+    $sql=simplexml_load_file("../../sql.xml");
+    $conn=mysqli_connect($sql->host,$sql->user,$sql->password,$sql->database);
     if(!$conn){echo mysqli_connect_error();die;}
     echo '<form method="GET">
                 <input name="food_name" placeholder="food_name"></input>

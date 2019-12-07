@@ -32,18 +32,20 @@
     }
     function plate($i){
         $j=0;
-        $conn=/*provided individually*/;
+        $sql=simplexml_load_file("../../../sql.xml");
+        $conn=mysqli_connect($sql->host,$sql->user,$sql->password,$sql->database);
         if(!$conn){echo mysqli_connect_error();die;}
         $qry=mysqli_query($conn,"SELECT * from foods;");
         $data=mysqli_fetch_all($qry);
         while($j<=$i && $data[$j]){
+        $temp=str_replace('&quot',"'",$data[$j]);
         echo '
         <div class="col-sm-4">                 
             <div class="card" style="width:300px;  height:500px;">
-                <img  class="card-img-top" src="pictures/'.$data[$j][1].'jpeg" alt="'.$data[$j][1].'" style="height:55%">
+                <img  class="card-img-top" src="pictures/'.$temp[1].'jpeg" alt="'.$temp[1].'" style="height:55%">
                 <div class="card-body">
-                    <h1 class="card-head">'.$data[$j][1].'</h1>
-                    <p class="card-text">'.$data[$j][2].'</p>
+                    <h1 class="card-head">'.$temp[1].'</h1>
+                    <p class="card-text">'.$temp[2].'</p>
                     <a class="btn btn-success stretched-link" href="work in progress/work in progress.html"> View it </a>
                 </div>
             </div>

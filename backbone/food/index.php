@@ -48,7 +48,7 @@ echo '<!--jumbotron-->
 <div class="container">
         <div class="row text-center">    
         ';
-        plate(14);
+plate(14);
 echo '  </div>
 </div>
 

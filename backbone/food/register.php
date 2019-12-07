@@ -1,7 +1,7 @@
 <?php
-    require "include.php";
+    require "phps/include.php";
     show("ht_element/header");
-    show("ht_element/index_top");
+    show("ht_element/register_top");
     $food=simplexml_load_file("reference/food.xml");
      $i=1;
      $x="f".$i;
@@ -17,6 +17,6 @@
         $i++;
         $x="f".$i;
     }
-    show("ht_element/index_bottom");
+    show("ht_element/register_bottom");
     show("ht_element/footer");
 ?>

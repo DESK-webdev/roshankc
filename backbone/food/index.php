@@ -48,7 +48,7 @@ echo '<!--jumbotron-->
 <div class="container">
         <div class="row text-center">    
         ';
-plate(14);
+plate(14,"view it","foods");
 echo '  </div>
 </div>
 
@@ -65,57 +65,13 @@ echo '  </div>
     
     
 <!--Cards-->
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="container">
-            <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/prof1.jpeg" alt="Samlal pic" >
-                    <div class="card-body">
-                        <h3 class="card-title">Samlal</h3>
-                        <p class="card-text">Samlal is a computer engineer,
-                             also called a software engineer. He responsible for developing, 
-                            testing and evaluating the software that make our computers work.
-                             He may help in the development of new computer games and business applications, 
-                             or even in the design of entirely new operating systems.</p>
-                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/prof3.jpeg" alt=" pic" >
-                    <div class="card-body">
-                        <h3 class="card-title">Sarita</h3>
-                        <p class="card-text">Sarita is a computer engineer,
-                             also called a software engineer. He responsible for developing, 
-                            testing and evaluating the software that make our computers work.
-                             He may help in the development of new computer games and business applications, 
-                             or even in the design of entirely new operating systems.</p>
-                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/prof2.jpeg" alt=" pic" >
-                    <div class="card-body">
-                        <h3 class="card-title">Anjan</h3>
-                        <p class="card-text">Anjan is a computer engineer,
-                             also called a software engineer. He responsible for developing, 
-                            testing and evaluating the software that make our computers work.
-                             He may help in the development of new computer games and business applications, 
-                             or even in the design of entirely new operating systems.</p>
-                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
+<div class="container">
+        <div class="row text-center"> 
+    ';
+plate(5,"see profile","profiles");
+echo '  
         </div>
-    </div>
+</div>  
     <hr>
 
 <!--Other pantry services-->
@@ -134,24 +90,9 @@ echo '  </div>
 <div class="row text-center padding social">
     <div class="col-12">
     <h1>Connect</h1>
-    </div>
-    <div class="col-12">
-        <a href="#">
-        <i class="fab fa-facebook"></i>
-        </a>
-        <a href="#">
-        <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#">
-        <i class="fab fa-youtube"></i>
-        </a>
-        <a href="#">
-        <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#">
-        <i class="fab fa-google-plus-g"></i>
-        </a>
-    </div>
+    </div>';
+show("ht_element/connect");
+echo '    
 </div>
 </div> ';
 show("ht_element/footer");

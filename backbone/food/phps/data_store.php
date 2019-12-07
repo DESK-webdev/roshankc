@@ -2,7 +2,8 @@
 error_reporting(0);
     $selected=implode(",",$_GET['food']);
     define(get,$_GET);
-    $conn=/*provided individually*/;
+    $sql=simplexml_load_file("../../../sql.xml");
+    $conn=mysqli_connect($sql->host,$sql->user,$sql->password,$sql->database);
     if(!$conn){echo mysqli_connect_error();}
     $qry=mysqli_query($conn,"INSERT INTO `data` 
     VALUES 

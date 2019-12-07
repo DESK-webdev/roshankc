@@ -4,7 +4,7 @@
     if(!$conn){echo mysqli_connect_error();die;}
     echo '<form method="GET">
                 <input name="name" placeholder="person_name"></input>
-                <input name="bio" placeholder="description"></input>
+                <input name="about" placeholder="description"></input>
                 <input name="photo" placeholder="photo url"></input>
                 <input type="submit" value="submit" ></input>
             </form>';

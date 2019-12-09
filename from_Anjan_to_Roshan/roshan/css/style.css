@@ -3,38 +3,76 @@
 *{
     margin: 0;
     padding: 0;
+
 }
+
 body{
-    background:gray ; 
+    background:gray  ;
+    
+    
 }
 .container-fluid{
     width: 100%;
 }
-.upper-road{
-    margin-top:20px;
-}
 .road{
-    height: 196px;   
+    height: 196px;
+    
 }
-.green{
+
+
+
+
+.col-2{
     background: green;
     border: 4px double black;
-    height: 198px;   
-}
-.red{
-    background: red;
-    border: 4px double black;
-    height: 198px;   
+    height: 198px;
+    
 }
 .small-block{
     height: 15px ;
-    width: 60px;
+    width: 7%;
     background: blanchedalmond;
-    margin:92px 0px 0 50px ;
+    margin:92px 0px 0 45px ;
 }
 .row{
-    width: 100%;   
+    width: 100%;
+    
 }
-#parked{
+.col-2:focus{
     background: red;
+
 }
+
+.dark{
+    background-color: rgb(99, 96, 96);
+    margin:135px 0px 0 86% ;
+    display: flex;
+    position: absolute;
+    flex-direction:row;
+    height: 52px;
+
+}
+hr.light{
+    width: 40%;
+    height: 2px;
+    border-top: 1px solid #d5d5d5;
+    
+}
+.dark .leader{
+    line-height: 16px;
+    padding: 3px;
+    font-size: 14px;
+    
+}
+
+
+@media only screen and (max-width:1304px){
+
+    .dark{
+        margin:135px 0px 0 85% ;
+        position: absolute;
+    }
+}
+
+
+

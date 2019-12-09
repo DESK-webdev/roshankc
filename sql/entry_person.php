@@ -8,7 +8,7 @@
                 <input name="photo" placeholder="photo url"></input>
                 <input type="submit" value="submit" ></input>
             </form>';
-    if($_GET['name'] && $_GET['bio'] && $_GET['photo']){
+    if($_GET['name'] && $_GET['about'] && $_GET['photo']){
     $temp=str_replace(array("'","\""),"&quot",$_GET['bio']);
     $photo=str_replace(array("'"),"&quot",$_GET['photo']);
     $qry=mysqli_query($conn,"INSERT INTO `profiles` 
@@ -22,3 +22,4 @@
     else echo "done";
     }
     mysqli_close($conn);
+?>

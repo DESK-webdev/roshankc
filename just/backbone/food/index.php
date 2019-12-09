@@ -1,6 +1,6 @@
 <?php
 require "phps/include.php";
-show("ht_element/header");
+include("phps/header.php");
 echo '<div class="carousel slide" data-ride="carousel" id="slide">
     <ul class="carousel-indicators">
         <li data-slide-to="0" data-target="#slide" class="active"></li>
@@ -95,5 +95,5 @@ show("ht_element/connect");
 echo '    
 </div>
 </div> ';
-show("ht_element/footer");
+include("phps/footer.php");
 ?>

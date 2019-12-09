@@ -31,7 +31,7 @@
     }
     function plate($i,$link,$table){
         $j=0;
-        $sql=simplexml_load_file("../../../sql.xml");
+        $sql=simplexml_load_file("../../../../sql.xml");
         $conn=mysqli_connect($sql->host,$sql->user,$sql->password,$sql->database);
         if(!$conn){echo mysqli_connect_error();die;}
         $qry=mysqli_query($conn,"SELECT * from ".$table.";");
@@ -52,5 +52,20 @@
         $j++;
         }
         mysqli_close($conn);
+    }
+    function login($username,$password){
+        $temp_user=str_replace('"'," ",$username);
+        $temp_password=str_replace('"'," ",$password);
+        $sql=simplexml_load_file("../../../../sql.xml");
+        $conn=mysqli_connect($sql->host,$sql->user,$sql->password,$sql->database);
+        if(!$conn){echo mysqli_connect_error();die;}
+        $qry=mysqli_query($conn,"SELECT * from users where 
+                                username=\"".$temp_user."\" and 
+                                password=\"".$temp_password."\";"
+                            );
+        $data=mysqli_fetch_all($qry);
+        mysqli_close($conn);
+        if(!$data){return 0;}
+        else{return 1;}
     }
 ?>

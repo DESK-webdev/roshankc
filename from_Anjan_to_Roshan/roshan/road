@@ -1,0 +1,32 @@
+<!--road-->
+    <div class="road">
+        <div class="row">
+            
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div>   
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div>
+                <div class="small-block">
+                </div> 
+                <div class="dark text-center">
+                    <hr class="light"> 
+                    <div class="foot">
+                        <p class="leader">Designed by Anjan Poudel.</p>
+                    </div>
+                </div>
+        </div>
+    </div>

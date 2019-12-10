@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="style/home.css" type="text/css">
         <link rel="stylesheet" href="style/login.css" type="text/css">
         <link rel="stylesheet" href="style/register.css" type="text/css">
+        <link rel="stylesheet" href="style/data_view.css" type="text/css">
     </head> 
     <body>   
     <nav class="navbar navbar-expand-sm bg-steel navbar-light sticky-top">

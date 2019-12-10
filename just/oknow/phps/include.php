@@ -31,7 +31,7 @@
     }
     function plate($i,$link,$table){
         $j=0;
-        $sql=simplexml_load_file("../sql.xml");
+        $sql=simplexml_load_file("../../../sql.xml");
         $conn=mysqli_connect($sql->host,$sql->user,$sql->password,$sql->database);
         if(!$conn){echo mysqli_connect_error();die;}
         $qry=mysqli_query($conn,"SELECT * from ".$table.";");

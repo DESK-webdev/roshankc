@@ -5,7 +5,7 @@
      <div class="register_container">
     <h1>Our Food Services</h1>
         <div class="register_form">
-            <form action="data_store.php" method="GET" class="form_inside need-validation">   
+            <form action="phps/data_store.php" method="GET" class="form_inside need-validation">   
                     <div class="form-group">
                         <label for="name" class="name">Names;</label>
                         <input type="text" class="form-control name_input" id="name" name="c_name" placeholder="Company Name" required>
@@ -39,8 +39,8 @@
         echo '
                 <div class="form-check">
                 <label for="check1" class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="check1" name="'.$food[$i].'" value="$i">
-                    "'.$item.'"
+                <input type="checkbox" class="form-check-input" id="check1" name="food['.$i.']" value="'.$i.'">
+                    '.$item.'
                 </label>
                 </div>
         ';

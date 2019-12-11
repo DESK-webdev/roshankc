@@ -7,9 +7,9 @@ echo '<div class="carousel slide" data-ride="carousel" id="slide">
         <li data-slide-to="1" data-target="#slide"></li>
         <li data-slide-to="2" data-target="#slide"></li>
     </ul>';
-image("img/burger.jpg",1);
-image("img/roast.jpg",0);
-image("img/pizza.webp",0); 
+image("https://www.seriouseats.com/recipes/images/2015/07/20150702-sous-vide-hamburger-anova-primary-1500x1125.jpg",1);
+image("https://www.foodiecrush.com/wp-content/uploads/2012/05/FoodieCrush-Roast-Spring-Chicken-015-1.jpg",0);
+image("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cheesy-pepperoni-pizza-royalty-free-image-1570815711.jpg",0); 
 echo '</div>';
 echo '<!--jumbotron-->
 <div class="container-fluid">

@@ -3,17 +3,17 @@
     $a=0;
     exec("./serial",$p,$a);
     echo $a;
-    //print_r($p);
     show("header");
     $i=0;
     $status = array('0' =>"green",'1' => "red" );
     $point=0;
     echo "<div class=\"row upper-road\">";
-    while($i<4){
-        if($i<(4-$a))   
+    while($i<=4){
+        if(($dec&($as))?1:0)   
             $point=1;
         echo "<div class=\"col-2 $status[$point]\"></div>";
         $i++;
+        $as=$as<<1;
         $point=0;
     }
     echo "</div>

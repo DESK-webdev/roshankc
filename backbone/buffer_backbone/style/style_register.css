@@ -1,0 +1,51 @@
+@import url(./fonts.css);
+
+
+.register_form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 20%;
+    padding: 2rem 1rem;
+    /* height: 70vh; */
+    box-shadow: 1px 10px 20px darkorange;
+    width: 58%;
+}
+
+.register_form h1{
+    font-size: 3rem;
+    font-family: Roboto;
+
+}
+
+.register_form label{
+    font-size: 1.5rem;
+    font-family: Abel;
+    /* margin: 5rem; */
+}
+.register_form input{
+    padding:  1rem ;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0.4rem;
+    margin: auto;
+    width: 90%;
+}
+.register_form input:hover{
+   cursor: text;
+  
+}
+.gender input:hover{
+    cursor: grab;
+}
+.button{
+    color:darkblue;
+    background-repeat: no-repeat;
+    font-size: large;
+    font-weight:900;
+}
+.button:hover{
+    color: deepskyblue;
+    background-color: dimgray;
+}

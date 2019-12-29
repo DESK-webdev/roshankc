@@ -1,0 +1,114 @@
+
+@import url(./fonts.css); 
+
+
+*{
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+
+
+/*---------Colors start---------*/
+
+:root{
+
+    --text-gray:rgb(31, 27, 27); 
+
+
+    /*---------Gradient color start--------*/
+    --sky: linear-gradient( 103deg,  rgba(137,247,234,1) 7.3%, rgba(102,117,241,1) 100.2% );
+    --my_color-green-red: linear-gradient( 103deg,  rgb(123, 231, 73) 7.3%, rgb(218, 15, 15) 100.2% );
+    --my-sky: radial-gradient( circle farthest-corner at 10% 20%,  rgba(137,247,254,1) 0%, rgba(102,166,255,1) 90% );
+    --light-sky: linear-gradient( 109.6deg,  rgb(170, 204, 231) 11.2%, rgb(208, 232, 243) 100.2% );
+    /*-------Gradient color end---------*/
+
+
+
+
+
+}
+
+
+/***********Colors end************/
+
+/*-------- Global classes --------*/
+
+
+h1{
+    font-size:35px;
+    font-family: Livvic;
+    color: var(--text-gray);
+    text-align: center;
+    
+}
+
+h2{
+    font-size:33px;
+    font-family: Livvic;
+    color: var(--text-gray);
+    text-align: center;
+    
+}
+
+h3{
+    font-size:30px;
+    font-family: Abel;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Abel;
+    color: var(--text-gray);
+    font-weight: bold;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+}
+p{
+    font-size:16px;
+    font-family: Lexend;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+.btn{
+    padding:0.8rem 2rem;
+    border-radius:1rem ;
+    background:var(--my-sky);
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border:1px solid transparent;
+    outline: none;
+    margin: 1rem;
+}
+
+.btn:hover{
+    background:rgb(177, 220, 228);
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+    border: none;
+
+
+
+}
+
+.btn:active{
+    background-color: var(--my-sky);
+}
+
+
+
+
+/*********** Global classes end **********/
+

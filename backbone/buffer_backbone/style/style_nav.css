@@ -1,0 +1,153 @@
+@import url(./style_global.css); 
+/*---------Navigation bar start---------*/
+nav{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1;
+    box-shadow: 0 1px 20px rgb(168, 132, 132);
+}
+
+nav .navbar-brand {
+    margin: 1rem;
+}
+
+nav .navbar-brand a{
+    font-family: Josefin;
+}
+
+
+nav .nav-items{
+    display: flex;
+
+}
+
+nav .nav-items .nav-link{
+    padding: 1.5rem 1rem;
+    transition: 0.4s ease;
+}
+
+nav .nav-items .nav-link a{
+    padding: 1rem 1rem;
+}
+
+
+
+nav .nav-items .nav-link:hover{
+    background: rgb(85, 72, 85);
+    border-radius: 1rem;
+}
+
+nav .nav-items .nav-link:hover>a{
+color: white;}
+
+
+nav .social{
+    margin: 1.5rem 1rem;
+}
+
+nav .social a{
+    padding: 0 0.3rem;
+}
+
+nav .toggle-collapse .toggle-icons{
+    margin: 1rem;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    display: flex;
+}
+
+nav .toggle-collapse .toggle-icons i{
+   display: none;
+   font-size: 1.4rem;
+}
+
+
+/********* Navigation bar end *********/
+
+
+/*--------Main site starts---------*/
+main .container{
+    background-image: url(../assets/burger.jpg);
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    padding: 10rem 0;
+    background-size:700px;
+    background-repeat: no-repeat;
+}
+
+main .search-box{
+    position: relative;
+    margin: 7rem 5rem 0 50%;
+    text-align: center;
+}
+
+main .search-box input{
+    padding: 0.9rem;
+    border-radius:0.4rem ;
+    border:1px solid black;
+    outline: none;
+    font-size: 1.1rem;
+    color: black;
+    font-family: Lexend;
+    margin: 0.5rem;
+}
+
+main .site-main{
+    position: relative;
+    background: rgb(163, 163, 197);
+    top: 10%;
+    left: 50%;
+    width: 44%;
+    padding: 1rem;
+    box-shadow: 0 15px 20px rgb(126, 121, 121);
+    border-radius: 1rem;
+}
+
+main .container .site-main .site-title{
+    padding:0 0 0  0rem;
+}
+
+
+main .products{
+    margin: 15rem 1rem;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    text-align: center;
+}
+
+main .products .product-items{
+    margin: 1rem;
+    box-shadow: 10px 15px 22px rgb(122, 114, 114);
+    border:1px solid rgb(123, 123, 134);
+    padding: 1rem;
+    background: var(--light-sky);
+    
+}
+
+main .products .product-items img{
+    width: 100%;
+}
+
+/*********Navigation bar end***********/
+
+
+@media only screen and (max-width:910px){
+
+    nav .nav-items,.social{
+        display: none;
+    }
+
+    main .container{
+        background-size:400px !important;
+        margin-top: 4rem !important;
+    }
+    
+    nav .toggle-collapse .toggle-icons i{
+        display: initial;
+     }
+     
+}
+

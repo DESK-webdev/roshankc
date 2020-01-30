@@ -1,48 +1,60 @@
+<?php require"dec-bin.php"; 
+$a=0;
+    exec("./serial",$p,$a);   //(port,result,returned)
+    //echo $p[4];
+    //print_r($p);
+$status = array("green","red");
+?>
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="2">
+</head>
+<link rel="stylesheet" href="./css/style2.css">
+
+<body>
+
+<div class="body">
+
+    <div class="road">
 <?php
-    require"include.php";
-    $a=0;
-    exec("./serial",$p,$a);
-    echo $a;
-    show("header");
-    $i=0;
-    $status = array('0' =>"green",'1' => "red" );
-    $point=0;
-    echo "<div class=\"row upper-road\">";
-    while($i<=4){
-        if(($dec&($as))?1:0)   
-            $point=1;
-        echo "<div class=\"col-2 $status[$point]\"></div>";
-        $i++;
-        $as=$as<<1;
-        $point=0;
+        $bit=tobit($p[4]);
+	//print_r($bit);
+	$i=2;
+    while($i>=0){
+	$temp=$bit[$i];
+	echo '<div class="block"></div>';
+        echo ' <a class="box" id="'.$status[$temp].'"></a>';
+        $i--;
     }
-    echo "</div>
-            <!--road-->
-                <div class=\"road\">
-                    <div class=\"row\">";
-    $i=0;
-    while($i<=4){
-            echo "<div class=\"small-block\">
-            </div>";
-        $i++;
-    }
-    echo "<div class=\"dark text-center\">
-    <hr class=\"light\"> 
-    <div class=\"foot\">
-        <p class=\"leader\">Designed by Anjan Poudel.</p>
+?>
+    </div>
+
+
+    <div class="entrance">
+        <div class="line">
+            <div class="yellow_line"></div>
+            <div class="yellow_line"></div>
+            <div class="yellow_line"></div>
+            <div class="yellow_line"></div>
+            <div class="yellow_line"></div>
+            <div class="yellow_line"></div>
         </div>
-      </div>
+        <div class="white_stripes">
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+           
+        </div>
     </div>
 </div>
-<div class=\"row upper-road\">";
-    $i=0;
-    while($i<4){
-        if($i<(4-$a))   
-            $point=1;
-        echo "<div class=\"col-2 $status[$point]\"></div>";
-        $i++;
-        $point=0;
-    }
-    echo "</div>";
-    show("footer");
-?>
+    <div class="footer">
+        <p style="color:white;float:right;">Designed by Anjan Paudel.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+
+*{margin: 0;
+}
+
+body{
+    background: rgb(80, 76, 76);
+
+}
+
+.body{
+    background: rgb(80, 76, 76);
+    border: 8px solid rgb(251, 255, 0);
+}
+
+.road{
+    margin-left: 10rem ;
+    display: grid;
+    grid-template-columns: 1% 25% 1% 25% 1% 25% 5%;
+}
+
+
+
+.box{
+    position: relative;
+    background: green;
+    border: 2px solid black;
+
+}
+
+#red{
+    background: rgb(219, 23, 23);
+}
+
+#green{
+    background: green;
+}
+
+.block{
+    width: 18px;
+    height: 250px;
+    background: rgb(246, 242, 0);
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgb(22, 22, 22);
+}
+
+.entrance{
+    height: 180px;
+    margin-top: 7rem;
+
+}
+
+.line{
+    width: 250px;
+    height: 18px;
+    background: rgb(223, 219, 5);
+}
+
+
+.white_stripes{
+    display: grid;
+    grid-template-columns: 10% 10%  10% 10% 10% 10% 10% ;
+    margin-top: 3.5rem;
+    width: 100%;
+}
+
+.white{
+    width: 70px;
+    height: 18px;
+    background: rgb(245, 245, 245);
+    margin: 1rem 1rem;
+}
+
+.yellow_line{
+    width: 50px;
+    height: 15px;
+    background: rgb(223, 219, 5);
+    margin: 1rem 80%;
+    top: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width:900px) {
+
+    .white{
+        width: 50px;
+        height: 18px;
+        background: rgb(245, 245, 245);
+        margin: 1rem 1rem;
+    }
+
+
+.road{
+    margin-left: 3rem ;
+    display: grid;
+    grid-template-columns: 1% 30% 1% 30% 1% 30% 5%;
+}
+
+
+
+}
+
+@media only screen and (max-width:700px) {
+
+    .white{
+        width: 50px;
+        height: 18px;
+        
+    }
+
+
+.road{
+    margin-left: 1rem ;
+    display: grid;
+    grid-template-columns: 1% 30% 1% 30% 1% 30% 5%;
+}
+.block{
+    width: 16px;
+    height: 230px;
+   
+}
+
+
+
+}
+
+@media only screen and (max-width:530px) {
+
+    .white{
+        width: 35px;
+        height: 18px;
+      
+    }
+
+
+.road{
+    margin-left: 1rem ;
+    display: grid;
+    grid-template-columns: 1% 30% 1% 30% 1% 30% 5%;
+}
+
+
+
+.block{
+    width: 18px;
+    height: 180px;
+   
+}
+
+
+
+}
+
+@media only screen and (max-width:430px) {
+
+    .white{
+        width: 30px;
+        height: 18px;
+      
+    }
+
+
+.road{
+    margin-left: 1rem ;
+    display: grid;
+    grid-template-columns: 1% 30% 1% 30% 1% 30% 5%;
+}
+
+
+
+.block{
+    width: 18px;
+    height: 150px;
+   
+}
+
+
+.line{
+    width: 200px;
+    height: 18px;
+    background: rgb(223, 219, 5);
+}
+
+
+.yellow_line{
+    width: 40px;
+  
+}
+
+}
+
+@media only screen and (max-width:360px) {
+
+    .white{
+        width: 25px;
+        height: 18px;
+      
+    }
+
+
+.road{
+    margin-left: 1rem ;
+    display: grid;
+    grid-template-columns: 1% 30% 1% 30% 1% 30% 5%;
+}
+
+
+
+.block{
+    width: 10px;
+    height: 150px;
+   
+}
+
+
+.line{
+    width: 180px;
+    height: 18px;
+    background: rgb(223, 219, 5);
+}
+
+
+.yellow_line{
+    width: 40px;
+  
+}
+
+}
